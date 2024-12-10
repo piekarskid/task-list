@@ -2,7 +2,7 @@
   "name": "server",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "test": "vitest"
@@ -12,12 +12,13 @@
     "vite": "^5.4.10"
   },
   "dependencies": {
+    "better-sqlite3": "^8.4.0",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "notifications": "*",
+    "tasks": "*",
     "tsx": "^4.19.2",
     "vitest": "^2.1.5"
   }

@@ -13,7 +13,7 @@ import {
   ThemeProvider,
   Toolbar,
 } from "@mui/material";
-import { Notification } from "notifications";
+import { Notification } from "../../../packages/tasks";
 import { FormEvent, MouseEvent, useState } from "react";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 
