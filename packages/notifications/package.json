@@ -1,0 +1,7 @@
+{
+  "name": "notifications",
+  "main": "src/index.ts",
+  "dependencies": {
+    "typescript": "5.5.4"
+  }
+}

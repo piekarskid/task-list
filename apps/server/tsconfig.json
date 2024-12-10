@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "useDefineForClassFields": true,
+    "module": "ES6",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    /* Bundler mode */
+
+    "moduleResolution": "Node16",
+    "types": ["vitest/globals"],
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["src", "vitest.config.ts"]
+}
