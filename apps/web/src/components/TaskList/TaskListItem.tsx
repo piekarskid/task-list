@@ -94,7 +94,6 @@ const useTaskListItem = (task: Task) => {
   };
 
   const onUpdate = async () => {
-    await tasksContext.list.fetch();
     onEditModalClose();
   };
 
