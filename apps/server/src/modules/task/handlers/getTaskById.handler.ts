@@ -1,7 +1,7 @@
-import { TaskService } from '../services/task.service'
+import { TaskService } from "../services/task.service";
 
-const taskService = new TaskService()
+const taskService = new TaskService();
 
 export function getTaskByIdHandler(id: number) {
-	return taskService.getTaskById(id)
+  return taskService.getTaskById(id);
 }
