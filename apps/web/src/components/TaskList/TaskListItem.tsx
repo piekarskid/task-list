@@ -93,8 +93,7 @@ const useTaskListItem = (task: Task) => {
     setIsEditModalOpen(false);
   };
 
-  const onUpdate = async (task: Task) => {
-    await tasksContext.update.mutate(task.id, task);
+  const onUpdate = async () => {
     await tasksContext.list.fetch();
     onEditModalClose();
   };
