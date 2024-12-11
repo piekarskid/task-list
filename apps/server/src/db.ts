@@ -1,8 +1,8 @@
-import Database from 'better-sqlite3'
-import { join } from 'path'
+import Database from "better-sqlite3";
+import { join } from "path";
 
-const dbPath = join(__dirname, '..', 'data', 'task.db')
-const db = new Database(dbPath)
+const dbPath = join(__dirname, "..", "data", "task.db");
+const db = new Database(dbPath);
 
 // Create table if not exists (now with description)
 db.exec(`
@@ -12,6 +12,6 @@ db.exec(`
     description TEXT DEFAULT '',
     completed BOOLEAN NOT NULL DEFAULT 0
   )
-`)
+`);
 
-export default db
+export default db;
