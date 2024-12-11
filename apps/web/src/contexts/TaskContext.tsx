@@ -60,19 +60,19 @@ export const TaskProvider: FC<PropsWithChildren> = ({ children }) => {
   const updateTaskMutation = useUpdateTaskMutation();
   const deleteTaskMutation = useDeleteTaskMutation();
 
-  useEffect(() => {
-    void taskQuery.fetch();
-    return () => {
-      taskQuery.abort();
-    };
-  }, []);
-
   const context: TTaskContext = {
     list: taskQuery,
     create: createTaskMutation,
     update: updateTaskMutation,
     delete: deleteTaskMutation,
   };
+
+  useEffect(() => {
+    void context.list.fetch();
+    return () => {
+      context.list.abort();
+    };
+  }, []);
 
   return (
     <TasksContext.Provider value={context}>{children}</TasksContext.Provider>
